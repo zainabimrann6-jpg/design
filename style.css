@@ -1,0 +1,902 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: #111;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1100px;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    padding: 22px 0;
+    background: white;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111;
+}
+
+.navbar-brand span {
+    font-weight: 500;
+}
+
+.navbar-nav {
+    gap: 28px;
+}
+
+.navbar-nav a {
+    color: #111;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.navbar-toggler {
+    border: 0;
+    font-size: 22px;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    padding: 35px 0 70px;
+    overflow: hidden;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 42% 58%;
+    align-items: center;
+    min-height: 350px;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 5;
+}
+
+.hero-text h1 {
+    font-size: 43px;
+    line-height: 1.12;
+    font-weight: 700;
+    max-width: 450px;
+    margin-bottom: 25px;
+}
+
+.hero-text p {
+    max-width: 400px;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.blue-btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #2639ed;
+    color: white;
+    padding: 13px 23px;
+    border-radius: 25px;
+    font-size: 12px;
+    box-shadow: 0 8px 20px rgba(38, 57, 237, .25);
+}
+
+
+/* HERO IMAGE SIDE */
+
+.hero-picture {
+    position: relative;
+    height: 340px;
+    margin-right: -100px;
+}
+
+.hero-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0 0 0 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.yellow-shape {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    background: #fff4d9;
+    right: 45px;
+    bottom: -20px;
+    z-index: 1;
+}
+
+
+/* ================= CLIENT ================= */
+
+.clients {
+    padding: 55px 0;
+}
+
+.client-container {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.client-heading h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.client-heading p {
+    font-size: 11px;
+    line-height: 1.7;
+    color: #777;
+}
+
+.client-logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.client-logos img {
+    max-width: 95px;
+    max-height: 30px;
+    object-fit: contain;
+}
+
+
+/* ================= SERVICES ================= */
+
+.services {
+    padding: 70px 0;
+    position: relative;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+}
+
+
+/* LEFT TITLE */
+
+.service-title {
+    position: relative;
+    padding: 50px 20px 50px 25px;
+    background: linear-gradient(
+        90deg,
+        #fff 0%,
+        #f7faff 100%
+    );
+}
+
+.service-title h2 {
+    position: relative;
+    z-index: 2;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.service-title p {
+    position: relative;
+    z-index: 2;
+    font-size: 10px;
+    color: #777;
+    max-width: 270px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.yellow-square {
+    width: 65px;
+    height: 65px;
+    background: #fff2c8;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    border-radius: 5px;
+}
+
+
+/* CARDS */
+
+.service-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.service-card {
+    min-height: 175px;
+    background: #fff;
+    border-radius: 18px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, .08);
+    position: relative;
+    z-index: 3;
+}
+
+.service-card:nth-child(2) {
+    transform: translateY(-25px);
+}
+
+.service-card:nth-child(3) {
+    transform: translateY(25px);
+}
+
+.service-card h3 {
+    font-size: 13px;
+    line-height: 1.25;
+    margin: 15px 0 10px;
+}
+
+.service-card p {
+    color: #888;
+    font-size: 8px;
+    line-height: 1.5;
+}
+
+.service-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-icon img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.blue-icon {
+    background: #eef5ff;
+}
+
+.yellow-icon {
+    background: #fff7df;
+}
+
+.pink-icon {
+    background: #ffeef8;
+}
+
+.green-icon {
+    background: #e8fff4;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    padding: 100px 0 70px;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    gap: 45px;
+}
+
+.about-image {
+    position: relative;
+}
+
+.video-image {
+    position: relative;
+    width: 100%;
+}
+
+.video-image img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55px;
+    height: 55px;
+    border: 0;
+    border-radius: 50%;
+    background: #3155e7;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.about-yellow {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #fff1ca;
+    right: -10px;
+    bottom: -15px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #777;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+
+/* ================= TESTIMONIAL TITLE ================= */
+
+.testimonial-title {
+    text-align: center;
+    padding: 70px 20px 40px;
+}
+
+.testimonial-title h2 {
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.testimonial-title p {
+    color: #777;
+    font-size: 11px;
+    margin-top: 15px;
+}
+
+
+/* ================= TESTIMONIAL ================= */
+
+.testimonial {
+    padding: 30px 0 100px;
+}
+
+.testimonial-container {
+    max-width: 850px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 220px 1fr 220px;
+    align-items: center;
+    gap: 40px;
+}
+
+.person-photo img {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-content h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.testimonial-content p {
+    font-size: 11px;
+    color: #777;
+    line-height: 1.8;
+}
+
+.dots {
+    margin-top: 20px;
+    display: flex;
+    gap: 7px;
+}
+
+.dots span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ddd;
+}
+
+.dots .active {
+    background: #2639ed;
+}
+
+.team-bubbles {
+    position: relative;
+    height: 220px;
+}
+
+.team-bubbles img {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team-bubbles img:nth-child(1) {
+    top: 0;
+    right: 50px;
+}
+
+.team-bubbles img:nth-child(2) {
+    top: 50px;
+    right: 110px;
+}
+
+.team-bubbles img:nth-child(3) {
+    top: 100px;
+    right: 35px;
+}
+
+.team-bubbles img:nth-child(4) {
+    bottom: 15px;
+    right: 110px;
+}
+
+.team-bubbles img:nth-child(5) {
+    top: 20px;
+    right: 0;
+}
+
+.team-bubbles img:nth-child(6) {
+    bottom: 0;
+    right: 10px;
+}
+
+
+/* ================= NEWSLETTER ================= */
+
+.newsletter {
+    padding: 50px 0 100px;
+}
+
+.newsletter-box {
+    max-width: 1050px;
+    margin: auto;
+    min-height: 250px;
+    background: #f1f6ff;
+    border-radius: 35px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-circle {
+    position: absolute;
+    left: -130px;
+    top: -130px;
+    width: 380px;
+    height: 380px;
+    background: #2639ed;
+    border-radius: 50%;
+}
+
+.newsletter-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.newsletter-content h2 {
+    font-size: 28px;
+}
+
+.newsletter-content p {
+    color: #777;
+    font-size: 11px;
+    margin: 10px 0 20px;
+}
+
+.email-box {
+    background: white;
+    padding: 5px;
+    border-radius: 30px;
+    width: 430px;
+    display: flex;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+.email-box input {
+    border: 0;
+    outline: none;
+    flex: 1;
+    padding: 12px 18px;
+    font-size: 11px;
+}
+
+.email-box button {
+    border: 0;
+    background: #2639ed;
+    color: white;
+    border-radius: 25px;
+    padding: 12px 20px;
+    font-size: 11px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 70px 0 20px;
+    border-top: 1px solid #eee;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-brand h2 {
+    font-size: 22px;
+}
+
+.footer-brand span {
+    font-weight: 400;
+}
+
+.footer-brand p {
+    color: #777;
+    font-size: 10px;
+    line-height: 1.7;
+    max-width: 200px;
+}
+
+footer h4 {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+footer a {
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 10px;
+    margin-bottom: 12px;
+}
+
+.copyright {
+    text-align: center;
+    color: #aaa;
+    font-size: 9px;
+    margin-top: 60px;
+}
+
+
+/* ================================================= */
+/* MOBILE — VIDEO WALI SIDE POSITIONING */
+/* ================================================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .navbar-nav {
+        gap: 15px;
+        padding-top: 15px;
+    }
+
+    .navbar-nav a {
+        font-size: 10px;
+    }
+
+
+    /* HERO SIDE-BY-SIDE */
+
+    .hero {
+        padding: 20px 0 45px;
+    }
+
+    .hero-container {
+        grid-template-columns: 44% 56%;
+        min-height: 205px;
+    }
+
+    .hero-text h1 {
+        font-size: 18px;
+        line-height: 1.15;
+        margin-bottom: 12px;
+    }
+
+    .hero-text p {
+        font-size: 6px;
+        line-height: 1.55;
+        margin-bottom: 12px;
+    }
+
+    .blue-btn {
+        padding: 7px 12px;
+        font-size: 7px;
+    }
+
+    .hero-picture {
+        height: 165px;
+        margin-right: -30px;
+    }
+
+    .hero-picture img {
+        border-radius: 0 0 0 55px;
+    }
+
+    .yellow-shape {
+        width: 42px;
+        height: 42px;
+        right: 15px;
+        bottom: -10px;
+    }
+
+
+    /* CLIENT SIDE-BY-SIDE */
+
+    .clients {
+        padding: 35px 0;
+    }
+
+    .client-container {
+        grid-template-columns: 28% 72%;
+        gap: 15px;
+    }
+
+    .client-heading h2 {
+        font-size: 17px;
+    }
+
+    .client-heading p {
+        font-size: 6px;
+    }
+
+    .client-logos {
+        gap: 12px;
+    }
+
+    .client-logos img {
+        max-width: 55px;
+        max-height: 20px;
+    }
+
+
+    /* SERVICES — LEFT + RIGHT */
+
+    .services {
+        padding: 45px 0;
+    }
+
+    .service-container {
+        grid-template-columns: 42% 58%;
+        align-items: center;
+    }
+
+    .service-title {
+        padding: 35px 5px 35px 8px;
+    }
+
+    .service-title h2 {
+        font-size: 15px;
+    }
+
+    .service-title p {
+        font-size: 5px;
+        line-height: 1.5;
+        margin-top: 10px;
+    }
+
+    .yellow-square {
+        width: 35px;
+        height: 35px;
+        top: 20px;
+    }
+
+    .service-cards {
+        gap: 9px;
+        padding-left: 8px;
+    }
+
+    .service-card {
+        min-height: 115px;
+        padding: 12px 6px;
+        border-radius: 12px;
+    }
+
+    .service-card:nth-child(2) {
+        transform: translateY(-18px);
+    }
+
+    .service-card:nth-child(3) {
+        transform: translateY(18px);
+    }
+
+    .service-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .service-icon img {
+        width: 21px;
+        height: 21px;
+    }
+
+    .service-card h3 {
+        font-size: 7px;
+        margin: 8px 0 5px;
+    }
+
+    .service-card p {
+        font-size: 4.5px;
+    }
+
+
+    /* ABOUT SIDE-BY-SIDE */
+
+    .about {
+        padding: 55px 0 35px;
+    }
+
+    .about-container {
+        grid-template-columns: 52% 48%;
+        gap: 15px;
+    }
+
+    .about-text h2 {
+        font-size: 15px;
+        line-height: 1.2;
+    }
+
+    .about-text p {
+        font-size: 5px;
+        line-height: 1.55;
+    }
+
+    .play-button {
+        width: 35px;
+        height: 35px;
+        font-size: 11px;
+    }
+
+    .about-yellow {
+        width: 35px;
+        height: 35px;
+    }
+
+
+    /* TESTIMONIAL */
+
+    .testimonial-title {
+        padding: 40px 10px 20px;
+    }
+
+    .testimonial-title h2 {
+        font-size: 18px;
+    }
+
+    .testimonial-title p {
+        font-size: 6px;
+    }
+
+    .testimonial-container {
+        grid-template-columns: 28% 42% 30%;
+        gap: 8px;
+    }
+
+    .person-photo img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .testimonial-content h3 {
+        font-size: 9px;
+    }
+
+    .testimonial-content p {
+        font-size: 5px;
+        line-height: 1.5;
+    }
+
+    .team-bubbles {
+        height: 120px;
+    }
+
+    .team-bubbles img {
+        width: 28px;
+        height: 28px;
+    }
+
+
+    /* NEWSLETTER */
+
+    .newsletter {
+        padding: 30px 0 55px;
+    }
+
+    .newsletter-box {
+        min-height: 150px;
+        border-radius: 20px;
+    }
+
+    .newsletter-content h2 {
+        font-size: 17px;
+    }
+
+    .newsletter-content p {
+        font-size: 6px;
+    }
+
+    .email-box {
+        width: 260px;
+    }
+
+    .email-box input {
+        font-size: 7px;
+        padding: 8px;
+    }
+
+    .email-box button {
+        font-size: 7px;
+        padding: 8px 10px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 40px 0 15px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1.5fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .footer-brand p,
+    footer a {
+        font-size: 7px;
+    }
+
+    footer h4 {
+        font-size: 9px;
+    }
+
+    .copyright {
+        font-size: 7px;
+        margin-top: 30px;
+    }
+}
